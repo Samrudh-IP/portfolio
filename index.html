@@ -36,7 +36,7 @@
           <i class="fas fa-bars"onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p class="text">Developer and Editor</p>
+          <p><span id="auto-type"></span></p>
           <h1>HI, I'm <span>Samrudh</span> <br />from Banglore</h1>
         </div>
       </div>
@@ -220,5 +220,17 @@
       </div>
     </div>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var typed = new Typed("#auto-type", {
+          strings: ['Developer', '&amp; Editor'],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop: true
+        });
+      });
+    </script>
+    
   </body>
 </html>
